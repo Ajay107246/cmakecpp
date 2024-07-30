@@ -1,0 +1,8 @@
+[
+{
+  "directory": "G:/CPP/2024/VSCode/cmakecpp/build",
+  "command": "D:/msys64/ucrt64/bin/c++.exe   -g -std=gnu++14 -o CMakeFiles/cmakecpp.dir/main.cpp.obj -c G:/CPP/2024/VSCode/cmakecpp/main.cpp",
+  "file": "G:/CPP/2024/VSCode/cmakecpp/main.cpp",
+  "output": "CMakeFiles/cmakecpp.dir/main.cpp.obj"
+}
+]
