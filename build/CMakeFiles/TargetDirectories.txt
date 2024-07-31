@@ -30,3 +30,7 @@ G:/CPP/2024/VSCode/cmakecpp/build/CMakeFiles/cmakecpp.dir
 G:/CPP/2024/VSCode/cmakecpp/build/CMakeFiles/test.dir
 G:/CPP/2024/VSCode/cmakecpp/build/CMakeFiles/edit_cache.dir
 G:/CPP/2024/VSCode/cmakecpp/build/CMakeFiles/rebuild_cache.dir
+G:/CPP/2024/VSCode/cmakecpp/build/test/CMakeFiles/cmakecppTests.dir
+G:/CPP/2024/VSCode/cmakecpp/build/test/CMakeFiles/test.dir
+G:/CPP/2024/VSCode/cmakecpp/build/test/CMakeFiles/edit_cache.dir
+G:/CPP/2024/VSCode/cmakecpp/build/test/CMakeFiles/rebuild_cache.dir

@@ -4,5 +4,11 @@
   "command": "D:/msys64/ucrt64/bin/c++.exe   -g -std=gnu++14 -o CMakeFiles/cmakecpp.dir/main.cpp.obj -c G:/CPP/2024/VSCode/cmakecpp/main.cpp",
   "file": "G:/CPP/2024/VSCode/cmakecpp/main.cpp",
   "output": "CMakeFiles/cmakecpp.dir/main.cpp.obj"
+},
+{
+  "directory": "G:/CPP/2024/VSCode/cmakecpp/build/test",
+  "command": "D:/msys64/ucrt64/bin/g++.exe  @CMakeFiles/cmakecppTests.dir/includes_CXX.rsp -g -o CMakeFiles/cmakecppTests.dir/mainTests.cpp.obj -c G:/CPP/2024/VSCode/cmakecpp/test/mainTests.cpp",
+  "file": "G:/CPP/2024/VSCode/cmakecpp/test/mainTests.cpp",
+  "output": "test/CMakeFiles/cmakecppTests.dir/mainTests.cpp.obj"
 }
 ]

@@ -64,10 +64,11 @@ CMAKE_BINARY_DIR = G:/CPP/2024/VSCode/cmakecpp/build
 
 # The main recursive "all" target.
 all: CMakeFiles/cmakecpp.dir/all
+all: test/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -100,7 +101,23 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/cmakecpp.dir/clean
+clean: test/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Recursive "all" directory target.
+test/all: test/CMakeFiles/cmakecppTests.dir/all
+.PHONY : test/all
+
+# Recursive "preinstall" directory target.
+test/preinstall:
+.PHONY : test/preinstall
+
+# Recursive "clean" directory target.
+test/clean: test/CMakeFiles/cmakecppTests.dir/clean
+.PHONY : test/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Experimental.dir
@@ -855,6 +872,32 @@ cmakecpp: CMakeFiles/cmakecpp.dir/rule
 CMakeFiles/cmakecpp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmakecpp.dir/build.make CMakeFiles/cmakecpp.dir/clean
 .PHONY : CMakeFiles/cmakecpp.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/cmakecppTests.dir
+
+# All Build rule for target.
+test/CMakeFiles/cmakecppTests.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cmakecppTests.dir/build.make test/CMakeFiles/cmakecppTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cmakecppTests.dir/build.make test/CMakeFiles/cmakecppTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=G:/CPP/2024/VSCode/cmakecpp/build/CMakeFiles --progress-num=3,4 "Built target cmakecppTests"
+.PHONY : test/CMakeFiles/cmakecppTests.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/cmakecppTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start G:/CPP/2024/VSCode/cmakecpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/cmakecppTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start G:/CPP/2024/VSCode/cmakecpp/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/cmakecppTests.dir/rule
+
+# Convenience name for target.
+cmakecppTests: test/CMakeFiles/cmakecppTests.dir/rule
+.PHONY : cmakecppTests
+
+# clean rule for target.
+test/CMakeFiles/cmakecppTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cmakecppTests.dir/build.make test/CMakeFiles/cmakecppTests.dir/clean
+.PHONY : test/CMakeFiles/cmakecppTests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

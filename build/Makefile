@@ -503,6 +503,19 @@ cmakecpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmakecpp.dir/build.make CMakeFiles/cmakecpp.dir/build
 .PHONY : cmakecpp/fast
 
+#=============================================================================
+# Target rules for targets named cmakecppTests
+
+# Build rule for target.
+cmakecppTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmakecppTests
+.PHONY : cmakecppTests
+
+# fast build rule for target.
+cmakecppTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cmakecppTests.dir/build.make test/CMakeFiles/cmakecppTests.dir/build
+.PHONY : cmakecppTests/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -565,6 +578,7 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... cmakecpp"
+	@echo "... cmakecppTests"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

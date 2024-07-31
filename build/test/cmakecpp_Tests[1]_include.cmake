@@ -1,0 +1,5 @@
+if(EXISTS "G:/CPP/2024/VSCode/cmakecpp/build/test/cmakecpp_Tests[1]_tests.cmake")
+  include("G:/CPP/2024/VSCode/cmakecpp/build/test/cmakecpp_Tests[1]_tests.cmake")
+else()
+  add_test(cmakecpp_Tests_NOT_BUILT cmakecpp_Tests_NOT_BUILT)
+endif()
